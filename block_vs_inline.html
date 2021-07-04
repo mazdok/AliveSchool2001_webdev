@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 20px;
+      }
+      
+      .block-el {
+        background-color: lightblue;
+        padding: 5px;
+      }
+
+      .inline-el {
+        background-color: yellow;
+        padding: 5px;
+      }
+
+      .block-span {
+        display: block;
+        text-align: center;
+        height: 100px;
+      }
+
+      .d-block {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- block -->
+    <h1 class="block-el">Я блоковий елемент "h1"</h1>
+    <div class="block-el">Я блоковий елемент "div"</div>
+    <p class="block-el">Я блоковий елемент "p"</p>
+
+    <!-- inline -->
+    <span class="inline-el">Я рядковий елемент "span"</span>
+    <span class="inline-el">Я рядковий елемент "span"</span>
+    <span class="inline-el">Я рядковий елемент "span"</span>
+    <span class="inline-el">Я рядковий елемент "span"</span>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- inline in block -->
+    <p class="block-el">
+      Я блоковий елемент, але в мені можуть бути рядкові елементи.
+      <span class="inline-el">Ось я ТУТ</span>. Чи для прикладу посилання -
+      <a href="google.com" class="inline-el">Google</a>
+    </p>
+
+
+    <!-- CSS can change it -->
+    <span class="inline-el block-span">Я рядковий елемент "span" з суперсилами</span>
+  </body>
+</html>
